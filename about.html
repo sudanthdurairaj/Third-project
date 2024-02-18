@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rec.com</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5899106bde.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa-solid fa-x" onclick="hidemenu()"></i>
+                <ul>
+
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTATCT</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showmenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+    </section>
+
+    <!-- About us content -->
+
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>
+                    We are the World's Largest university
+                </h1>
+                <p>Our institution stands as a beacon of higher learning, dedicated to nurturing minds and empowering
+                    individuals to achieve their academic and professional goals. With a rich history of academic
+                    excellence, we offer a wide range of programs that cater to the diverse interests and aspirations of
+                    our students. Our campus is a melting pot of cultures, ideas, and ambitions, creating a vibrant
+                    community that encourages collaboration, innovation, and global thinking.</p>
+                <a href="" class="hero-btn">EXPLORE NOW &nbsp;<i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+
+            <div class="about-col">
+                <img src="images/about.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Established with a commitment to excellence in education, our institution prides itself on fostering an
+            environment where innovation, creativity, and academic rigor thrive. Here, students embark on a journey of
+            discovery, unlocking their potential and shaping the future.</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+        <p><i class="fa-solid fa-copyright"></i>&nbsp;sudanth durairaj</p>
+
+    </section>
+
+    <script>
+        var navlink = document.getElementById("navlinks");
+
+        function showmenu() {
+            navlink.style.right = "0";
+        }
+
+        function hidemenu() {
+            navlink.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
